@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-li{
+    padding: 20px;
+    list-style: none;
+}
+
+
+.nav-li>a:hover {
+    color: #E112FC;
+    
+}
+
+.nav-li a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.nav-child{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.904);
+    z-index: 20px;
+    padding: 20px 0;
+    box-shadow: 0 1px 6px 0;
+    margin-top: 10px;
+}
+
+.nav-child-two  {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.904);
+    z-index: 20px;
+    padding: 20px 0;
+    box-shadow: 0 1px 6px 0;
+    margin-top: 10px;
+}
+
+
+.nav-child li, .nav-child-two li {
+    list-style: none;
+    padding: 10px 40px;
+    min-width: 300px;
+    margin: 0 20px;
+    animation-duration: 0.8s
+}
+
+.vupad:hover .nav-child{
+    display: block;
+}
+
+.vupad-two:hover .nav-child-two{
+    display: block;
+}
+
+
+
+
+.nav-child li>.nav-child__link{
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-child-two li>a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.vupad-two {
+    position: relative;
+    z-index: 30;
+}
+
+.nav-child-two {
+    top: -9px;
+    left: 307px;
+}
+
+
+
+
+.nav-child li:hover, .nav-child-two li:hover{
+  background-color:   rgba(217, 25, 224, 1);
+}
+
+.nav-child li:hover .nav-child__link , .nav-child-two li:hover a{
+    color: #fff;
+}
